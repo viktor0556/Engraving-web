@@ -5,6 +5,7 @@ import Gallery from './components/Gallery';
 import About from './components/About';
 import Contact from './components/Contact';
 import Admin from './components/Admin';
+import Categories from './components/Categories';
 
 function App() {
   const [page, setPage] = useState('home');
@@ -17,6 +18,7 @@ function App() {
       {page === 'about' && <About />}
       {page === 'contact' && <Contact />}
       {page === 'admin' && <Admin />}
+      {page === 'categories' && <Categories />}
     </div>
   );
 }
